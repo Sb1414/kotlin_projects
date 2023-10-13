@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.TextView
+import androidx.appcompat.widget.AppCompatButton
 
 class MainActivity : AppCompatActivity() {
     private var currentInput = ""
@@ -76,6 +77,19 @@ class MainActivity : AppCompatActivity() {
             updateResultsTextView()
         }
     }
+    var isSbTextVisible = false
+
+    fun onEmptyBtnClick(view: View) {
+        val button = view as AppCompatButton
+
+        if (isSbTextVisible) {
+            button.text = ""
+        } else {
+            button.text = "Sb."
+        }
+        isSbTextVisible = !isSbTextVisible
+    }
+
 
     private fun evaluateExpression(expression: String): Double {
         val tokens = expression.split(" ")

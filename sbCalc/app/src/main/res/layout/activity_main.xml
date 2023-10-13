@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/black_violet"
+    android:background="@color/eq_color"
     tools:ignore="HardcodedText"
     tools:context=".MainActivity">
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -50,23 +50,26 @@
     <LinearLayout
         style="@style/buttonRow">
 
-        <Button
-            style="@style/buttonNumber"
-            android:textColor="@color/dark_violet"
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/buttonOperator"
+            android:textColor="@color/violet"
             android:onClick="onClearClick"
             android:text="AC"/>
-        <Button
-            style="@style/buttonNumber"
-            android:textColor="@color/dark_violet"
-            android:onClick="onBackspaceClick"
-            android:text="⌫"/>
-        <Button
+
+        <androidx.appcompat.widget.AppCompatButton
             style="@style/buttonOperator"
-            android:text=""/>
-        <Button
+            android:onClick="onBackspaceClick"
+            android:text="⌫"
+            android:textColor="@color/violet" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/buttonOperator"
+            android:text=""
+            android:onClick="onEmptyBtnClick"/>
+        <androidx.appcompat.widget.AppCompatButton
             style="@style/buttonOperator"
             android:text="/"
-            android:textColor="@color/dark_violet"
+            android:textColor="@color/violet"
             android:onClick="onOperatorClick"/>
 
     </LinearLayout>
@@ -74,22 +77,22 @@
     <LinearLayout
         style="@style/buttonRow">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             style="@style/buttonNumber"
             android:text="7"
             android:onClick="onNumberClick"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             style="@style/buttonNumber"
             android:text="8"
             android:onClick="onNumberClick"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             style="@style/buttonNumber"
             android:text="9"
             android:onClick="onNumberClick"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             style="@style/buttonOperator"
             android:text="x"
-            android:textColor="@color/dark_violet"
+            android:textColor="@color/violet"
             android:onClick="onOperatorClick"/>
 
     </LinearLayout>
@@ -97,22 +100,22 @@
     <LinearLayout
         style="@style/buttonRow">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             style="@style/buttonNumber"
             android:text="4"
             android:onClick="onNumberClick"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             style="@style/buttonNumber"
             android:text="5"
             android:onClick="onNumberClick"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             style="@style/buttonNumber"
             android:text="6"
             android:onClick="onNumberClick"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             style="@style/buttonOperator"
             android:text="-"
-            android:textColor="@color/dark_violet"
+            android:textColor="@color/violet"
             android:onClick="onOperatorClick"/>
 
     </LinearLayout>
@@ -120,19 +123,19 @@
     <LinearLayout
         style="@style/buttonRow">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             style="@style/buttonNumber"
             android:text="1"
             android:onClick="onNumberClick"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             style="@style/buttonNumber"
             android:text="2"
             android:onClick="onNumberClick"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             style="@style/buttonNumber"
             android:text="3"
             android:onClick="onNumberClick"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             style="@style/buttonOperator"
             android:text="+"
             android:textColor="@color/violet"
@@ -144,18 +147,18 @@
     <LinearLayout
         style="@style/buttonRow">
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             style="@style/buttonNumber"
             android:text="."
             android:onClick="onDotClick"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             style="@style/buttonNumber"
             android:text="0"
             android:onClick="onNumberClick"/>
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             style="@style/buttonOperator"
             android:layout_weight="2"
-            android:background="@color/dark_violet"
+            android:background="@color/eq_color"
             android:textColor="@color/violet"
             android:textSize="40sp"
             android:onClick="onEqualsClick"

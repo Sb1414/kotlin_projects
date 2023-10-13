@@ -26,7 +26,14 @@ class MainActivity : AppCompatActivity() {
 
     fun onOperatorClick(view: View) {
         if (view is Button) {
-            currentInput += " " + view.text + " "
+            if (currentInput.isNotEmpty()) {
+                val lastChar = currentInput.last()
+                if (lastChar == ' ') {
+                    currentInput = currentInput.dropLast(3) + " " + view.text + " "
+                } else if (lastChar.isDigit()) {
+                    currentInput += " " + view.text + " "
+                }
+            }
             updateWorkingTextView()
         }
     }

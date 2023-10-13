@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/almostBlack"
+    android:background="@color/black_violet"
     tools:ignore="HardcodedText"
     tools:context=".MainActivity">
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -52,21 +52,21 @@
 
         <Button
             style="@style/buttonNumber"
-            android:textColor="@color/red"
+            android:textColor="@color/dark_violet"
             android:onClick="onClearClick"
             android:text="AC"/>
         <Button
             style="@style/buttonNumber"
-            android:textColor="@color/red"
+            android:textColor="@color/dark_violet"
             android:onClick="onBackspaceClick"
             android:text="⌫"/>
         <Button
-            style="@style/buttonNumber"
-            android:text="."
-            android:onClick="onDotClick"/>
+            style="@style/buttonOperator"
+            android:text=""/>
         <Button
             style="@style/buttonOperator"
             android:text="/"
+            android:textColor="@color/dark_violet"
             android:onClick="onOperatorClick"/>
 
     </LinearLayout>
@@ -89,6 +89,7 @@
         <Button
             style="@style/buttonOperator"
             android:text="x"
+            android:textColor="@color/dark_violet"
             android:onClick="onOperatorClick"/>
 
     </LinearLayout>
@@ -111,6 +112,7 @@
         <Button
             style="@style/buttonOperator"
             android:text="-"
+            android:textColor="@color/dark_violet"
             android:onClick="onOperatorClick"/>
 
     </LinearLayout>
@@ -133,6 +135,8 @@
         <Button
             style="@style/buttonOperator"
             android:text="+"
+            android:textColor="@color/violet"
+            android:background="@color/dark_violet"
             android:onClick="onOperatorClick"/>
 
     </LinearLayout>
@@ -142,16 +146,17 @@
 
         <Button
             style="@style/buttonNumber"
-            android:text="7"
-            android:onClick="onNumberClick" />
+            android:text="."
+            android:onClick="onDotClick"/>
         <Button
             style="@style/buttonNumber"
             android:text="0"
             android:onClick="onNumberClick"/>
         <Button
-            style="@style/buttonNumber"
+            style="@style/buttonOperator"
             android:layout_weight="2"
-            android:background="@color/orange"
+            android:background="@color/dark_violet"
+            android:textColor="@color/violet"
             android:textSize="40sp"
             android:onClick="onEqualsClick"
             android:text="=" />

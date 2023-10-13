@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
+    <color name="black_violet">#100929</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="red">#FF0000</color>
-    <color name="orange">#EC6A00</color>
-    <color name="almostBlack">#202020</color>
+    <color name="violet">#50269F</color>
+    <color name="dark_violet">#2D0E49</color>
+    <color name="button_pressed">#37105A</color>
+    <color name="button_focused">#350F57</color>
 </resources>

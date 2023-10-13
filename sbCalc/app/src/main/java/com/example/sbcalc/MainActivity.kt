@@ -46,10 +46,17 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun onDotClick(view: View) {
-        if (!currentInput.contains(".") && currentInput.isNotEmpty()) {
-            currentInput += "."
-            updateWorkingTextView()
+        if (currentInput.isEmpty()) {
+            currentInput = "0."
+        } else {
+            val lastChar = currentInput.last()
+            if (lastChar.isDigit() && !currentInput.substringAfterLast(" ").contains(".")) {
+                currentInput += "."
+            } else if (lastChar == ' ') {
+                currentInput += "0."
+            }
         }
+        updateWorkingTextView()
     }
 
     fun onEqualsClick(view: View) {

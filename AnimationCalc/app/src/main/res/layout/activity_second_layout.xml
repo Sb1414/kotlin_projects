@@ -6,4 +6,43 @@
     android:layout_height="match_parent"
     tools:context=".SecondLayout">
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="@color/dark_violet"
+        android:textColor="@color/white"
+        android:onClick="animationPage"
+        android:text="Calculator"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/sbText"
+        android:layout_width="415dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="96dp"
+        android:text="i'm Sb"
+        android:textAlignment="center"
+        android:textColor="@color/dark_violet"
+        android:textSize="24sp"
+        android:visibility="invisible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageIcon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="."
+        android:onClick="animateSplit"
+        android:src="@drawable/baseline_auto_awesome_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="buttonRow">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@color/violet</item>
+    </style>
+
+    <style name="buttonNumber">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/violet</item>
+        <item name="android:state_pressed">@color/button_pressed</item>
+        <item name="android:state_focused">@color/button_focused</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="buttonOperator">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/dark_violet</item>
+        <item name="android:state_pressed">@color/button_pressed</item>
+        <item name="android:state_focused">@color/button_focused</item>
+        <item name="android:textSize">25dp</item>
+        <item name="android:textColor">@color/violet</item>
+    </style>
+
+</resources>

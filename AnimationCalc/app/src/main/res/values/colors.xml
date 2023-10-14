@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black_violet">#100929</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="violet">#269F9B</color>
+    <color name="dark_violet">#0E3B49</color>
+    <color name="eq_color">#092B35</color>
+    <color name="button_pressed">#104F5A</color>
+    <color name="button_focused">#0F5157</color>
+</resources>

@@ -27,10 +27,6 @@ import com.google.android.material.navigation.NavigationBarItemView;
 import com.google.android.material.navigation.NavigationView;
 
 public class MainActivity extends AppCompatActivity {
-    private static final int HOME_ID = R.id.home;
-    private static final int SHORTS_ID = R.id.shorts;
-    private static final int SUBSCRIPTIONS_ID = R.id.subscriptions;
-    private static final int LIBRARY_ID = R.id.library;
     FloatingActionButton fab;
     DrawerLayout drawerLayout;
     BottomNavigationView bottomNavigationView;
@@ -63,22 +59,16 @@ public class MainActivity extends AppCompatActivity {
         bottomNavigationView.setOnItemSelectedListener(item -> {
 
 
-            switch (item.getItemId()) {
-                case HOME_ID:
-                    replaceFragment(new HomeFragment());
-                    break;
+            int itemId = item.getItemId();
 
-                case SHORTS_ID:
-                    replaceFragment(new ShortsFragment());
-                    break;
-
-                case SUBSCRIPTIONS_ID:
-                    replaceFragment(new SubscriptionsFragment());
-                    break;
-
-                case LIBRARY_ID:
-                    replaceFragment(new LibraryFragment());
-                    break;
+            if (itemId == R.id.home) {
+                replaceFragment(new HomeFragment());
+            } else if (itemId == R.id.shorts) {
+                replaceFragment(new ShortsFragment());
+            } else if (itemId == R.id.subscriptions) {
+                replaceFragment(new SubscriptionsFragment());
+            } else if (itemId == R.id.library) {
+                replaceFragment(new LibraryFragment());
             }
 
             return true;
@@ -150,7 +140,7 @@ public class MainActivity extends AppCompatActivity {
         dialog.show();
         dialog.getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
-        dialog.getWindow().getAttributes().windowAnimations = android.R.style.Animation_Dialog;
+        dialog.getWindow().getAttributes().windowAnimations = R.style.DialogAnimation;
         dialog.getWindow().setGravity(Gravity.BOTTOM);
 
     }

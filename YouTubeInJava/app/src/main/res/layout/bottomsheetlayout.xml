@@ -3,7 +3,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/dialogbg">
+    android:background="@drawable/dialogbgkg">
 
     <ImageView
         android:layout_width="70dp"
